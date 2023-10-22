@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Appointment</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Pet<span>Grooming</span></h1>
+      </header>
+      <figure>
+        <img src="img/dog-cat.png" alt="" />
+      </figure>
+      <form action="#" class="form">
+        <article class="title">
+          <p>Create an appointment</p>
+        </article>
+        <section class="pet">
+          <input
+            type="text"
+            id="petName"
+            class="pet-name"
+            placeholder="Pet name"
+          />
+          <label for="petName" class="label-pet-name">Pet name</label>
+        </section>
+        <section class="owner">
+          <input
+            type="text"
+            id="ownerName"
+            class="owner-name"
+            placeholder="Owners name"
+          />
+          <label for="ownerName" class="label-owner-name">Owners name</label>
+        </section>
+        <section class="email">
+          <input
+            type="text"
+            id="email"
+            class="email-input"
+            placeholder="E-mail"
+          />
+          <label for="email" class="label-email">E-mail</label>
+        </section>
+        <section class="phone">
+          <input
+            type="number"
+            id="phone"
+            class="phone-number"
+            placeholder="Phone number"
+          />
+          <label for="phone" class="label-phone">Phone number</label>
+        </section>
+        <section class="describe">
+          <textarea
+            name=""
+            id="textarea"
+            cols="30"
+            rows="10"
+            class="textarea"
+            placeholder="Describe grooming style"
+          ></textarea>
+          <label for="textarea" class="textarea-label"
+            >Describe grooming style</label
+          >
+        </section>
+        <button class="submit" type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>

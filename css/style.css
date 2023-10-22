@@ -1,0 +1,1049 @@
+/*generic body removing padding and margins of browser*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EAD5C7;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/*my code*/
+
+@font-face {
+    font-family: pet;
+    src: url(../fonts/PawWowBlock-VGMDl.otf);
+}
+
+@font-face {
+    font-family: grooming;
+    src: url(../fonts/CuteMeow-51Pra.otf);
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main header h1 {
+    font-size: 2rem;
+    color: #C18555;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-family: pet;
+}
+
+main header h1 span {
+    font-family: grooming;
+}
+
+main figure {
+    display: block;
+    width: 100px;
+}
+
+main figure img {
+    width: 100%;
+}
+
+main .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 250px;
+    background-color: #fff;
+    gap: 15px;
+}
+
+main .form section {
+    margin-bottom: 15px;
+    transition: all .3s;
+}
+
+main .form section label {
+    font-size: 1rem;
+    display: block;
+    color: #111;
+    transform: translateY(-18px);
+    transform-origin: 0 0;
+    transition: all .3s;
+    margin-left: 10px;
+}
+
+
+main .form article {
+    width: 100%;
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+main .form article p {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Quicksand;
+    color: #111;
+
+}
+
+main .form section input {
+width: 100%;
+max-width: 250px;
+border-radius: 10px;
+outline: none;
+border: 1px solid #000;
+}
+
+main .form section input:focus {
+    box-shadow: none;
+    outline: none;
+    border-color: #C18555;
+    transition: all .5s;
+}
+
+main .form input:focus + label {
+    transform: translateY(-38px);
+}
+
+main .form textarea:focus + label {
+    transform: translateY(-174px);
+}
+
+main .form section textarea:focus {
+    box-shadow: none;
+    outline: none;
+    border-color: #C18555;
+    transition: all .5s;
+}
+
+input::placeholder {
+    color: transparent;
+}
+
+main .form section textarea {
+    width: 100%;
+    max-width: 250px;
+    border: 1px solid #000;
+    resize: none;
+}
+
+main .form section textarea::placeholder {
+    color: transparent;
+}
+
+main .form section .textarea-label {
+    transform: translateY(-154px);
+    transform-origin: 0 0;
+}
+
+main .form button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #C18555;
+    color: #fff;
+    outline: none;
+    box-shadow: none;
+    border-radius: 10px;
+    font-size: 16px;
+    border: none;
+    margin-left: 10px;
+    font-family: quicksand;
+    align-self: flex-start;
+    font-weight: 900;
+}
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    main header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    main header h1 {
+        font-size: 2rem;
+        color: #C18555;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        font-family: pet;
+    }
+    
+    main header h1 span {
+        font-family: grooming;
+    }
+    
+    main figure {
+        display: block;
+        width: 100px;
+    }
+    
+    main figure img {
+        width: 100%;
+    }
+    
+    main .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 250px;
+        background-color: #fff;
+        gap: 15px;
+    }
+    
+    main .form section {
+        margin-bottom: 15px;
+        transition: all .3s;
+    }
+    
+    main .form section label {
+        font-size: 1rem;
+        display: block;
+        color: #111;
+        transform: translateY(-18px);
+        transform-origin: 0 0;
+        transition: all .3s;
+        margin-left: 10px;
+    }
+    
+    
+    main .form article {
+        width: 100%;
+        max-width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    
+    main .form article p {
+        font-size: 18px;
+        font-weight: bold;
+        font-family: Quicksand;
+        color: #111;
+    
+    }
+    
+    main .form section input {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #000;
+    }
+    
+    main .form section input:focus {
+        box-shadow: none;
+        outline: none;
+        border-color: #C18555;
+        transition: all .5s;
+    }
+    
+    main .form input:focus + label {
+        transform: translateY(-38px);
+    }
+    
+    main .form textarea:focus + label {
+        transform: translateY(-174px);
+    }
+    
+    main .form section textarea:focus {
+        box-shadow: none;
+        outline: none;
+        border-color: #C18555;
+        transition: all .5s;
+    }
+    
+    input::placeholder {
+        color: transparent;
+    }
+    
+    main .form section textarea {
+        width: 100%;
+        max-width: 250px;
+        border: 1px solid #000;
+        resize: none;
+    }
+    
+    main .form section textarea::placeholder {
+        color: transparent;
+    }
+    
+    main .form section .textarea-label {
+        transform: translateY(-154px);
+        transform-origin: 0 0;
+    }
+    
+    main .form button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background-color: #C18555;
+        color: #fff;
+        outline: none;
+        box-shadow: none;
+        border-radius: 10px;
+        font-size: 16px;
+        border: none;
+        font-weight: 900;
+        margin-left: 10px;
+        font-family: quicksand;
+        align-self: flex-start;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    main header {
+        position: relative;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: header;
+    }
+    main {
+display: grid;
+grid-template-columns: 2fr;
+grid-template-rows: 2fr;
+grid-template-areas:"header header"
+"img form" ;
+    }
+    main .form {
+        width: 100%;
+        max-width: 300px;
+display: grid;
+grid-template-columns: 2fr;
+grid-template-rows: 2fr;
+        background-color: #fff;
+        gap: 15px;
+        grid-template-areas:"title title" "pet owner" "email phone" "describe describe" ;
+        grid-area: form;
+        margin-top: 15%;
+    }
+    main figure {
+        display: block;
+        width: 200px;
+        grid-area: img;
+    }
+    
+    main figure img {
+        width: 100%;
+    }
+
+    main .title {
+        grid-area: title;
+        margin: 0 auto;
+    }
+
+    main .form article p {
+        text-align: center;
+    }
+
+    main .pet {
+        grid-area: pet;
+    }
+
+    main .owner {
+        grid-area: owner;
+    }
+
+    main .email {
+        grid-area: email;
+    }
+
+    main .phone {
+        grid-area: phone;
+    }
+
+    main .describe {
+        grid-area: describe;
+        margin: 15px auto;
+        width: 100%;
+        max-width: fit-content;
+    }
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    main header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    main header h1 {
+        font-size: 2rem;
+        color: #C18555;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        font-family: pet;
+    }
+    
+    main header h1 span {
+        font-family: grooming;
+    }
+    
+    main figure {
+        display: block;
+        width: 100px;
+    }
+    
+    main figure img {
+        width: 100%;
+    }
+    
+    main .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 250px;
+        background-color: #fff;
+        gap: 15px;
+    }
+    
+    main .form section {
+        margin-bottom: 15px;
+        transition: all .3s;
+    }
+    
+    main .form section label {
+        font-size: 1rem;
+        display: block;
+        color: #111;
+        transform: translateY(-18px);
+        transform-origin: 0 0;
+        transition: all .3s;
+        margin-left: 10px;
+    }
+    
+    
+    main .form article {
+        width: 100%;
+        max-width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    
+    main .form article p {
+        font-size: 18px;
+        font-weight: bold;
+        font-family: Quicksand;
+        color: #111;
+    
+    }
+    
+    main .form section input {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #000;
+    }
+    
+    main .form section input:focus {
+        box-shadow: none;
+        outline: none;
+        border-color: #C18555;
+        transition: all .5s;
+    }
+    
+    main .form input:focus + label {
+        transform: translateY(-38px);
+    }
+    
+    main .form textarea:focus + label {
+        transform: translateY(-174px);
+    }
+    
+    main .form section textarea:focus {
+        box-shadow: none;
+        outline: none;
+        border-color: #C18555;
+        transition: all .5s;
+    }
+    
+    input::placeholder {
+        color: transparent;
+    }
+    
+    main .form section textarea {
+        width: 100%;
+        max-width: 250px;
+        border: 1px solid #000;
+        resize: none;
+    }
+    
+    main .form section textarea::placeholder {
+        color: transparent;
+    }
+    
+    main .form section .textarea-label {
+        transform: translateY(-154px);
+        transform-origin: 0 0;
+    }
+    
+    main .form button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background-color: #C18555;
+        color: #fff;
+        outline: none;
+        box-shadow: none;
+        border-radius: 10px;
+        font-size: 16px;
+        border: none;
+        font-weight: 900;
+        margin-left: 10px;
+        font-family: quicksand;
+        align-self: flex-start;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    main header {
+        position: relative;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: header;
+    }
+    main {
+display: grid;
+grid-template-columns: 2fr;
+grid-template-rows: 2fr;
+grid-template-areas:"header header"
+"img form" ;
+    }
+    main .form {
+        width: 100%;
+        max-width: 384px;
+display: grid;
+grid-template-columns: 2fr;
+grid-template-rows: 2fr;
+        background-color: #fff;
+        gap: 15px;
+        grid-template-areas:"title title" "pet owner" "email phone" "describe describe" ;
+        grid-area: form;
+        margin-top: 15%;
+    }
+    main figure {
+        display: block;
+        width: 290px;
+        grid-area: img;
+    }
+    
+    main figure img {
+        width: 100%;
+    }
+
+    main .title {
+        grid-area: title;
+        margin: 0 auto;
+    }
+
+    main .form article p {
+        text-align: center;
+    }
+
+    main .pet {
+        grid-area: pet;
+    }
+
+    main .owner {
+        grid-area: owner;
+    }
+
+    main .email {
+        grid-area: email;
+    }
+
+    main .phone {
+        grid-area: phone;
+    }
+
+    main .describe {
+        grid-area: describe;
+        margin: 15px auto;
+        width: 100%;
+        max-width: fit-content;
+    }
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    main header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    main header h1 {
+        font-size: 2rem;
+        color: #C18555;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        font-family: pet;
+    }
+    
+    main header h1 span {
+        font-family: grooming;
+    }
+    
+    main figure {
+        display: block;
+        width: 100px;
+    }
+    
+    main figure img {
+        width: 100%;
+    }
+    
+    main .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 400px;
+        background-color: #fff;
+        gap: 15px;
+        padding: 15px 35px;
+    }
+    
+    main .form section {
+        margin-bottom: 15px;
+        transition: all .3s;
+    }
+    
+    main .form section label {
+        font-size: 1rem;
+        display: block;
+        color: #111;
+        transform: translateY(-18px);
+        transform-origin: 0 0;
+        transition: all .3s;
+        margin-left: 10px;
+    }
+    
+    
+    main .form article {
+        width: 100%;
+        max-width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    
+    main .form article p {
+        font-size: 18px;
+        font-weight: bold;
+        font-family: Quicksand;
+        color: #111;
+    
+    }
+    
+    main .form section input {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #000;
+    }
+    
+    main .form section input:focus {
+        box-shadow: none;
+        outline: none;
+        border-color: #C18555;
+        transition: all .5s;
+    }
+    
+    main .form input:focus + label {
+        transform: translateY(-38px);
+    }
+    
+    main .form textarea:focus + label {
+        transform: translateY(-174px);
+    }
+    
+    main .form section textarea:focus {
+        box-shadow: none;
+        outline: none;
+        border-color: #C18555;
+        transition: all .5s;
+    }
+    
+    input::placeholder {
+        color: transparent;
+    }
+    
+    main .form section textarea {
+        width: 100%;
+        max-width: 250px;
+        border: 1px solid #000;
+        resize: none;
+    }
+    
+    main .form section textarea::placeholder {
+        color: transparent;
+    }
+    
+    main .form section .textarea-label {
+        transform: translateY(-154px);
+        transform-origin: 0 0;
+    }
+    
+    main .form button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background-color: #C18555;
+        color: #fff;
+        outline: none;
+        box-shadow: none;
+        border-radius: 10px;
+        font-size: 16px;
+        border: none;
+        font-weight: 900;
+        margin-left: 10px;
+        font-family: quicksand;
+        align-self: flex-start;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    main header {
+        position: relative;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: header;
+    }
+    main {
+display: grid;
+grid-template-columns: 2fr;
+grid-template-rows: 2fr;
+grid-template-areas:"header header"
+"img form" ;
+    }
+    main .form {
+        width: 100%;
+        max-width: 400px;
+display: grid;
+grid-template-columns: 2fr;
+grid-template-rows: 2fr;
+        background-color: #fff;
+        gap: 15px;
+        grid-template-areas:"title title" "pet owner" "email phone" "describe describe" ;
+        grid-area: form;
+        margin-top: 15%;
+    }
+    main figure {
+        display: block;
+        width: 320px;
+        grid-area: img;
+    }
+    
+    main figure img {
+        width: 100%;
+    }
+
+    main .title {
+        grid-area: title;
+        margin: 0 auto;
+    }
+
+    main .form article p {
+        text-align: center;
+    }
+
+    main .pet {
+        grid-area: pet;
+    }
+
+    main .owner {
+        grid-area: owner;
+    }
+
+    main .email {
+        grid-area: email;
+    }
+
+    main .phone {
+        grid-area: phone;
+    }
+
+    main .describe {
+        grid-area: describe;
+        margin: 15px auto;
+        width: 100%;
+        max-width: fit-content;
+    }
+
+}
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    main header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    main header h1 {
+        font-size: 3rem;
+        color: #C18555;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        font-family: pet;
+    }
+    
+    main header h1 span {
+        font-family: grooming;
+    }
+    
+    main figure {
+        display: block;
+        width: 100px;
+    }
+    
+    main figure img {
+        width: 100%;
+    }
+    
+    main .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 500px;
+        background-color: #fff;
+        gap: 15px;
+        padding: 15px 35px;
+    }
+    
+    main .form section {
+        margin-bottom: 15px;
+        transition: all .3s;
+    }
+    
+    main .form section label {
+        font-size: 1rem;
+        display: block;
+        color: #111;
+        transform: translateY(-18px);
+        transform-origin: 0 0;
+        transition: all .3s;
+        margin-left: 10px;
+    }
+    
+    
+    main .form article {
+        width: 100%;
+        max-width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    
+    main .form article p {
+        font-size: 18px;
+        font-weight: bold;
+        font-family: Quicksand;
+        color: #111;
+    
+    }
+    
+    main .form section input {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #000;
+    }
+    
+    main .form section input:focus {
+        box-shadow: none;
+        outline: none;
+        border-color: #C18555;
+        transition: all .5s;
+    }
+    
+    main .form input:focus + label {
+        transform: translateY(-38px);
+    }
+    
+    main .form textarea:focus + label {
+        transform: translateY(-174px);
+    }
+    
+    main .form section textarea:focus {
+        box-shadow: none;
+        outline: none;
+        border-color: #C18555;
+        transition: all .5s;
+    }
+    
+    input::placeholder {
+        color: transparent;
+    }
+    
+    main .form section textarea {
+        width: 100%;
+        max-width: 250px;
+        border: 1px solid #000;
+        resize: none;
+    }
+    
+    main .form section textarea::placeholder {
+        color: transparent;
+    }
+    
+    main .form section .textarea-label {
+        transform: translateY(-154px);
+        transform-origin: 0 0;
+    }
+    
+    main .form button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background-color: #C18555;
+        color: #fff;
+        outline: none;
+        box-shadow: none;
+        border-radius: 10px;
+        font-size: 16px;
+        border: none;
+        font-weight: 900;
+        margin-left: 10px;
+        font-family: quicksand;
+        align-self: flex-start;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    main header {
+        position: relative;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: header;
+    }
+    main {
+display: grid;
+grid-template-columns: 2fr;
+grid-template-rows: 2fr;
+grid-template-areas:"header header"
+"img form" ;
+    }
+    main .form {
+        width: 100%;
+        max-width: 500px;
+display: grid;
+grid-template-columns: 2fr;
+grid-template-rows: 2fr;
+        background-color: #fff;
+        gap: 15px;
+        grid-template-areas:"title title" "pet owner" "email phone" "describe describe" ;
+        grid-area: form;
+        margin-top: 15%;
+    }
+    main figure {
+        display: block;
+        width: 420px;
+        grid-area: img;
+    }
+    
+    main figure img {
+        width: 100%;
+    }
+
+    main .title {
+        grid-area: title;
+        margin: 0 auto;
+    }
+
+    main .form article p {
+        text-align: center;
+    }
+
+    main .pet {
+        grid-area: pet;
+    }
+
+    main .owner {
+        grid-area: owner;
+    }
+
+    main .email {
+        grid-area: email;
+    }
+
+    main .phone {
+        grid-area: phone;
+    }
+
+    main .describe {
+        grid-area: describe;
+        margin: 15px auto;
+        width: 100%;
+        max-width: fit-content;
+    }
+
+}
